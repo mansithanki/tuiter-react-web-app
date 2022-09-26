@@ -9,7 +9,6 @@ function App() {
         <p>
           Hello World! This is React.
         </p> 
-        <h1> Hi, this is branch for Assignment 2! </h1>
   
         <a
           className="App-link"
