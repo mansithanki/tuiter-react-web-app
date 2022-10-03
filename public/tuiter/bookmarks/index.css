@@ -143,17 +143,24 @@ body{
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.wd-actions li a{
+    list-style-type: none;
+    color: rgb(110,118,125);
+    display: inline-block;   
+    padding-left: 16px;
+    padding-right: 16px;
+} 
 .wd-actions a{
-    color:gray;
     text-decoration: none;
-    margin:0px;
-    padding:12px;
+    display: inline-flex;
     
 }
 
 .wd-actions{
     display: inline-block;
     padding-left:0px;
+    align-items: center;
 }
 
 .wd-actionurl{

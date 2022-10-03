@@ -345,6 +345,81 @@ p#id-selector-2 {
             background-color: red;
             color: white;
           }
+
+
+          .flex-container-hor {
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+         }
+
+         .flex-container-hor-end {
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: end;
+         }
+
+         .flex-container-hor-spacearound{
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: space-around;
+         }
+
+         .flex-container-hor-spacebetween {
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: space-between;
+         }
+
+         .flex-container-ver {
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+         }
+
+         .flex-container-ver-center {
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+         }
+
+         .flex-container-independent{
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            /*justify-content: space-evenly;*/
+            /*align-items: center;*/
+         }
+         .flex-container-independent > .flex-box {
+            flex-basis: 100%;
+         }
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
           
           @media (min-width: 0px)
    and (max-width: 600px) {
@@ -356,6 +431,53 @@ p#id-selector-2 {
        color: white;
    }
 }
+
+
+
+@media (min-width: 0px)
+   and (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+  .media-query {
+    background-color: red;
+    color: white;
+  }
+}
+@media (min-width: 600px)
+   and (max-width: 1200px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+  .media-query {
+    background-color: yellow;
+    color: black;
+  }
+  .media-query-myexample{
+   background-color: pink;
+   color: lime;
+ }
+}
+@media (min-width: 1200px)
+   and (max-width: 1800px) {
+  body {
+    background-color: red;
+    color: white;
+  }
+  .media-query {
+    background-color: blue;
+    color: white;
+  }
+
+  .media-query-myexample{
+   background-color: green;
+   color: white;
+ }
+
+}
+
+
 
           
           
