@@ -1,0 +1,121 @@
+body {
+    /*font-family: "Arial";*/
+    /*background-color: black;*/
+    /*color: white;*/
+    background-color: black;
+}
+
+.wd-search-tuiter {
+    bottom: 7px;
+    left: 10px;
+}
+
+
+ .override-nav {
+    color:grey;
+}
+
+.wd-nav-tabs .wd-selected {
+    border-bottom: solid 4px rgb(29,161,242);
+}
+
+.list-group-item{
+    background-color: black;
+    color:white;
+}
+
+/* li.list-group-item{
+    outline-style: solid;
+    outline-color: grey;
+}
+
+div.list-group-item{
+    outline-style: solid;
+    outline-color: grey;
+} */
+
+.followsection{
+    background-color:#272727;
+}
+
+.btn-primary .followbutton{
+    background-color: green;
+}
+
+.override-bsinput{
+    background-color:#272727;
+    color: darkgray;
+    border: none;
+}
+
+i.fa-magnifying-glass{
+    color:grey;
+}
+
+input{
+    text-align: left;
+}
+
+i.fa-house{
+    /* outline-style: solid;
+    outline-color: white;  */
+    /* content: "\f015"; */
+    
+    /* text-shadow: 0px 0px 5px white;
+    color: black;   */
+    
+} 
+
+.override-greytext{
+    font-size: small;
+}
+
+.removehighlight{
+    text-decoration: none;
+}
+.followbutton{
+    background-color: white;
+    color:black;
+    font-weight: bolder;
+    outline-style: solid;
+    outline-color: black;
+}
+.override-row{
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-spacing: 0px;
+    border-top: none;
+    border-top: none;
+    /* margin-left: 1px;
+    margin-right: 1px; */
+}
+
+.wd-usa-logo{
+    /* height: 2; */
+    width:40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tweetimg{
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.wd-verified-logo{
+    height: 18px;
+    width:25px;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+.wd-verifiedsaturn-logo{
+    height: 30px;
+    width:30px;
+    padding-left: 2px;
+    padding-right: 5px;
+}
