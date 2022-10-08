@@ -15,6 +15,11 @@ body {
     color:grey;
 }
 
+a.nav-link{
+    padding: 6px;
+    margin: 6px;
+}
+
 .wd-nav-tabs .wd-selected {
     border-bottom: solid 4px rgb(29,161,242);
 }
@@ -70,6 +75,17 @@ i.fa-house{
     font-size: small;
 }
 
+.convertgrey{
+    color:grey;
+}
+
+.makewhite{
+    background-color:white;
+    color: black;
+    outline-style: solid;
+    outline-color: black;
+}
+
 .removehighlight{
     text-decoration: none;
 }
@@ -119,3 +135,48 @@ i.fa-house{
     padding-left: 2px;
     padding-right: 5px;
 }
+
+.wd-menudots{
+    float:right;
+    width:20px;
+    height:20px;
+}
+
+.nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-color: black;
+    border-bottom-right-radius: white;
+    color: white;
+    border-bottom: solid 4px rgb(29,161,242);
+    
+}
+
+.nav-item.show .nav-link, .nav-tabs .nav-link.active:hover {
+    background-color: transparent;
+    border-color: black;
+    border-bottom-right-radius: white;
+    color: white;
+    border-bottom: solid 4px rgb(29,161,242);
+    
+}
+
+.fa-ellipsis{
+    color: black;
+}
+
+.list-group-item{
+   color: lightgrey;
+}
+
+.list-group-item+.list-group-item.active{
+    font-weight: bolder;
+    background-color: black;
+    border-color: black;
+    text-shadow: 1px;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    isolation: isolate;
+    border-color: black; 
+}
+

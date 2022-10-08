@@ -7,10 +7,12 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
           rel="stylesheet"/> -->
     <link href="../../../vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/6dac5b7291.js" crossorigin="anonymous"></script>
     
     <link href="index.css" rel="stylesheet"/>
 </head>
@@ -74,13 +76,13 @@
                         <span class="ps-4"><div class = "d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline "> More </div></span>
                     </a>
                 </div>
-                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                <button class="btn btn-primary w-100 mt-1 rounded-pill makewhite">
                     Tuit
                 </button>
 
            
             </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-9 col-sm-10 col-xs-12">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-9 col-sm-10 col-xs-12">
             <div class="override-row">
                 <div class="row ps-3">
                     <div class="col-10 pt-2">
@@ -90,13 +92,13 @@
                         </div>
                     </div>
                     <div class=" d-inline pt-2 col-2">
-                        <i class="fa fa-cog fa-2x" style="color: blue"></i>
+                        <i class="fa fa-cog fa-2x" style="color: grey"></i>
                     </div>
                 </div>
 
 
 
-                <ul class="nav nav-tabs mt-1 mb-1">
+                <ul class="nav nav-tabs mt-1 mb-1 me-0 ps-1">
                     <li class="nav-item">
                         <a class="nav-link override-nav" href="#">
                             For You
@@ -118,7 +120,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-xxl-block d-xl-block d-lg-block d-md-block d-sm-none d-xs-block d-none">
-                        <a class="nav-link override-nav active" href="#" tabindex="-1">
+                        <a class="nav-link override-nav active override-active" href="#" tabindex="-1">
                             Entertainment
                         </a>
                     </li>
@@ -131,7 +133,9 @@
 
                 <ul class="list-group">
                     <li class="list-group-item">
+                        <img class = "wd-menudots" src="../challenge/images/greymenu.png"/>
                         <div class="row">
+                            
                             <div class="col-9">
                                 <div class="text-secondary override-greytext">
                                     Trending in R&B & soul 
@@ -148,6 +152,7 @@
                     </li>
 
                     <li class="list-group-item">
+                        <img class = "wd-menudots" src="../challenge/images/greymenu.png"/>
                         <div class="row">
                             <div class="col-9">
                                 <div class="text-secondary override-greytext">
@@ -175,53 +180,54 @@
                                 </div>
                                 <span class="text-secondary override-greytext"> - September 24, 2021 </span>
                                 <div class="fw-bolder">
-                                    Stanley Tucci: 'Food or sex? That's the cruellest question...' 
+                                     <span class="ms-2 d-block">Stanley Tucci: 'Food or sex? That's the cruellest question...' </span>
                                 </div>
-                                <span class="text-secondary override-greytext"> 123K Tuits </span>
                             </div>
                             <div class="col-4">
-                                <img class="float-end rounded" src="../challenge/images/javascript.png" height="100px">
+                                <img class="float-end rounded" src="../challenge/images/stanley.jpeg" height="100px">
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
+                        <img class = "wd-menudots" src="../challenge/images/greymenu.png"/>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-9">
                                 <div class="text-secondary override-greytext">
-                                    Web Development 
-                                </div>
-                                <div class="fw-bolder">
-                                    jQuery 
-                                </div>
-                                <span class="text-secondary override-greytext"> 123K Tuits </span>
-                            </div>
-                            <div class="col-4">
-                                <img class="float-end" src="../challenge/images/jquery.png" height="100px">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="text-secondary override-greytext">
-                                    Web Development 
+                                    Trending in Movies
                                 </div>
                                 <div class="fw-bolder d-inline">
-                                    NodeJS <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                    Smile
                                 </div>
-                                <span class="text-secondary"> - 2h </span>
-                                <div class="text-secondary"> 123K Tuits </div>
+                                <div class="text-secondary override-greytext"> Trending with  <a class = "removehighlight"href="#">HalloweenMovies</a></div>
                             </div>
-                            <div class="col-4">
-                                <img class="float-end" src="../challenge/images/nodejsicon.png" height="100px">
+                            <!-- <div class="col-3">
+                                <img class="float-end" src="../challenge/images/react.png" height="100px">
+                            </div> -->
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <img class = "wd-menudots" src="../challenge/images/greymenu.png"/>
+                        <div class="row">
+                            
+                            <div class="col-9">
+                                <div class="text-secondary override-greytext">
+                                    Trending in Music
+                                </div>
+                                <div class="fw-bolder d-inline">
+                                    Justin Bieber
+                                </div>
+                                <div class="text-secondary override-greytext"> 18.2K Tuits </div>
                             </div>
+                            <!-- <div class="col-3">
+                                <img class="float-end" src="../challenge/images/react.png" height="100px">
+                            </div> -->
                         </div>
                     </li>
                 </ul>
 
             </div>
         </div>
-            <div class="col-4 col-sm-0 col-md-0 col-md-3 col-lg-4 col-xl-4 col-xxl-4 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block ps-3">
+            <div class="col-4 col-sm-0 col-md-0 col-md-3 col-lg-5 col-xl-4 col-xxl-4 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block ps-3">
                     <div class="list-group">
                         
                         <div class="list-group-item fw-bolder followsection">
@@ -261,12 +267,15 @@
                             <div class="d-inline-block"><a href="#" class="removehighlight">Show More </a>
                                     
                             </div>  
-                            
-
-                    
-
-                     
-                    </div>
+                        </div>
+                        <div class="p-4 d-block">
+                            <a href="#" class="removehighlight me-4 override-greytext convertgrey">Terms of Service </a>
+                            <a href="#" class="removehighlight me-4 override-greytext convertgrey">Privacy Policy </a>
+                            <a href="#" class="removehighlight me-4 override-greytext convertgrey">Cookie Policy </a>
+                            <a href="#" class="removehighlight me-4 override-greytext convertgrey">Ads info</a>
+                            <a href="#" class="removehighlight me-4 override-greytext convertgrey">More ···  </a>
+                            <a href="#" class="removehighlight me-4 override-greytext convertgrey"> ©2021 Tuiter.Inc.  </a>
+                        </div>
             </div>
         </div>
     </div>
