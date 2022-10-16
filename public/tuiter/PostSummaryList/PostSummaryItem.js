@@ -41,7 +41,7 @@ const PostSummaryItem=(exploreItems)=>{
                                 ${isTweetCountPresent(exploreItems)}
                             </div>
                             <div class="col-3">
-                                <img class="float-end" src= ${exploreItems.image} height="100px">
+                                <img class="float-end" src= "${exploreItems.image}" height="100px">
                             </div>
                         </div>
                     </li>
