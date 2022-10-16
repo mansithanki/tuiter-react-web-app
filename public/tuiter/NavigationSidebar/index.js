@@ -11,12 +11,12 @@ const NavigationSidebar = (activeParameter) => {
     <div class="list-group-item fw-bolder">
     <i class="fa-brands fa-twitter"></i>
         </div>
-    <a href="/public/tuiter/HomeScreen/index.html"
+    <a href="../HomeScreen/index.html"
        class="list-group-item list-group-item-action ${IsSelectedPageFromNavigationMenu('Home', activeParameter)}">
        <i class="fa fa-home" aria-hidden="true"></i>
        <div class = "d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline ">Home</div> 
     </a>
-    <a href="/public/tuiter/ExploreScreen/index.html"
+    <a href="../ExploreScreen/index.html"
        class="list-group-item list-group-item-action ${IsSelectedPageFromNavigationMenu('Explore', activeParameter)}">
        <i class="fa fa-hashtag"></i> 
        <div class = "d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Explore</div> 
