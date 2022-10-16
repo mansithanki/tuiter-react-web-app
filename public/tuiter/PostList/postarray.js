@@ -19,7 +19,7 @@ export default[
         userhandle: '@nypost',
         postDate: '23h',
         authorText: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a href="trib.al/nx2Gfaq" class= "text-decoration-none">trib.al/nx2Gfaq</a>',
-        imgURL: '/public/tuiter/images/grimes.jpeg',
+        imgURL: '\"public/tuiter/images/grimes.jpeg\"',
         postHeading:'',
         postMainContent: '',
         isVerified: 'true',
