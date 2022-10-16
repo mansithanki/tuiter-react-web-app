@@ -51,7 +51,7 @@ const IsPhotoPresent=(postItem)=>{
 const PostSummaryItem=(postItem)=>{
     return(`
     
-    <div><img class = "m-2 mt-0 float-start rounded-circle" width="48px" height="48px" src=${postItem.authorImage}/>
+    <div><img class = "m-2 mt-0 float-start rounded-circle" width="48px" height="48px" src="${postItem.authorImage}"/>
     <div class = "wd-post p-12">
     <img class = "float-end" height="25px" width="25px" src="../images/dots.png"/>
     <div class ="d-inline">    
