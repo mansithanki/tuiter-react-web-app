@@ -5,7 +5,7 @@ export default[
         userhandle: '@elonmusk',
         postDate: '23h',
         authorText: 'Amazing Show about <a href="#" class= "text-decoration-none">@Inspiration4x</a> mission',
-        imgURL: '/public/tuiter/images/inspi.jpeg',
+        imgURL: '../images/inspi.jpeg',
         postHeading:'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         postMainContent: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ..<br> <i class="fa-solid fa-link"></i> netflix.com',
         isVerified: 'true',
