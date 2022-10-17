@@ -5,33 +5,16 @@ const IsVerified=(postItem)=>{
     return "";
 }
 
-const isTweetCountPresent=(exploreItems)=>{
-    if (exploreItems.tweets != 'NA'){
-        return `<span class="text-secondary"> ${exploreItems.tweets} Tuits </span>`;
-    } 
-    return "";
-}
-
-const IsUserNamePresent=(exploreItems)=>{
-    if (exploreItems.userName!=''){
-        return ` <div class="fw-bolder d-inline">
-        ${exploreItems.userName} ${IsVerified(exploreItems.isVerified)} 
-        <span class="text-secondary fw-normal"> - ${exploreItems.time} </span>
-        </div>`;
-    } 
-    return "";
-}
-
 const IsPostContentPresent=(postItem)=>{
     if (postItem.postHeading!='' && postItem.postMainContent!='' ){
-        return `<div class = "ps-5">
-        <img class = "d-block position-relative img-fluid rounded-top border border-secondary " src="${postItem.imgURL}"/> 
+        return `<div class = "ps-5 pe-5">
+        <img class = "d-block position-relative img-fluid rounded-top border border-secondary" src="${postItem.imgURL}"/> 
         <div class = "d-block border border-secondary rounded-bottom">
     <h6 class="d-inline-block text-wrap fw-normal ps-2 pt-1">${postItem.postHeading}</h6>
-    <p class="text-wrap text-secondary ps-2">${postItem.postMainContent}</p>  
+    <p class="text-wrap text-secondary ps-2 d-block">${postItem.postMainContent}</p>  
         </div> `;
     } 
-    return `<div class = "ps-5">
+    return `<div class = "ps-5 pe-5">
     <img class = "d-block position-relative img-fluid rounded border border-secondary " src="${postItem.imgURL}"/> 
     <div class = "d-block">
   
@@ -40,23 +23,24 @@ const IsPostContentPresent=(postItem)=>{
 
 const IsPhotoPresent=(postItem)=>{
     if (postItem.imgURL!=''){
-        return ` <div class = "wd-tuitphoto d-inline-block">
+        return ` <div class = "wd-tuitphoto d-inline-block ps-2">
         ${IsPostContentPresent(postItem)}
         `;
     } 
     return "";
 }
-// ${IsVerified(postItem.isVerified)}
-//${IsContentPresent(postItem)}
+
 const PostSummaryItem=(postItem)=>{
     return(`
     
-    <div><img class = "m-2 mt-0 float-start rounded-circle" width="48px" height="48px" src="${postItem.authorImage}"/>
-    <div class = "wd-post p-12">
-    <img class = "float-end" height="25px" width="25px" src="../images/dots.png"/>
-    <div class ="d-inline">    
+
+    <div class = "pt-2 border border-secondary rounded-top ">
+    <div class ="text-secondary d-inline"><img class = "m-2 mt-0 float-start rounded-circle" width="48px" height="48px" src="${postItem.authorImage}"/>
+    <img class = "float-end pe-1" height="25px" width="25px" src="../images/greymenu.png"/>
+    
+     <div class="d-inline">
     <div class="ms-12 d-inline text-white">  ${postItem.authorName} ${IsVerified(postItem.isVerified)} <span class = "text-secondary">${postItem.userhandle} · ${postItem.postDate}</span></div>
-        <div class="text-wrap d-block text-white"> ${postItem.authorText} 
+        <div class="d-block text-wrap text-break text-white ps-5"> ${postItem.authorText} </div></div>
         ${IsPhotoPresent(postItem)}
         
     <div class="d-inline">
