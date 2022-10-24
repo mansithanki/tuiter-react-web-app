@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const IsVerified=(postItem)=>{
     if (postItem === 'true'){
         return <i class="fa fa-check-circle pe-1" ></i>
@@ -62,11 +64,11 @@ const PostItem=(
         {IsPhotoPresent(postItem)}
         
         <div className="d-inline">
-            <ul className=" list-group list-group-horizontal ps-2 d-flex justify-content-between">
-            <li className= "list-group-item darken border-0" > <a href = "#" className = "text-secondary darken text-decoration-none"><i className="fa-regular fa-comment darken"></i> {postItem.commentCount} </a></li>
-            <li className = "list-group-item darken border-0"><a href = "#" className = "darken text-secondary text-decoration-none"><i className="fa-solid fa-retweet darken"></i> {postItem.retuitCount} </a></li>
-            <li className="list-group-item darken border-0"> <a href = "#" className = "darken text-secondary text-decoration-none"><i className="fa-regular fa-heart darken "></i> {postItem.likeCount} </a></li>
-            <li className = "list-group-item darken border-0"> <a href = "#" className = "darken text-secondary text-decoration-none"><i class="fa-solid fa-arrow-up-from-bracket darken"></i> </a></li>           
+            <ul className=" list-group list-group-horizontal ps-2 d-flex justify-content-around">
+            <li className= "list-group-item darken border-0" > <a href = "#" className = "text-secondary darken text-decoration-none"> <FontAwesomeIcon icon="comment"/> {postItem.commentCount} </a></li>
+            <li className = "list-group-item darken border-0"><a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="retweet"/> <i className="fa-solid fa-retweet darken"></i> {postItem.retuitCount} </a></li>
+            <li className="list-group-item darken border-0"> <a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="heart"/> <i className="fa-regular fa-heart darken "></i> {postItem.likeCount} </a></li>
+            <li className = "list-group-item darken border-0"> <a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="share"/> <i class="fa-solid fa-arrow-up-from-bracket darken"></i> </a></li>           
         </ul>
  </div>
     </div>
