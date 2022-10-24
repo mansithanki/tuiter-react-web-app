@@ -8,14 +8,14 @@ const IsVerified=(postItem)=>{
 const IsPostContentPresent=(postItem)=>{
     if (postItem.postHeading!='' && postItem.postMainContent!='' ){
         return `<div class = "ps-5 pe-5">
-        <img class = "d-block position-relative img-fluid rounded-top border border-secondary" src="${postItem.imgURL}"/> 
-        <div class = "d-block border border-secondary rounded-bottom">
+        <img class = "d-block position-relative img-fluid  border border-secondary" src="${postItem.imgURL}"/> 
+        <div class = "d-block border border-secondary ">
     <h6 class="d-inline-block text-wrap fw-normal ps-2 pt-1">${postItem.postHeading}</h6>
     <p class="text-wrap text-secondary ps-2 d-block">${postItem.postMainContent}</p>  
         </div> `;
     } 
     return `<div class = "ps-5 pe-5">
-    <img class = "d-block position-relative img-fluid rounded border border-secondary " src="${postItem.imgURL}"/> 
+    <img class = "d-block position-relative img-fluid  border border-secondary" src="${postItem.imgURL}"/> 
     <div class = "d-block">
   
     </div>`;
