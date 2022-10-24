@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const IsVerified=(postItem)=>{
     if (postItem === 'true'){
-        return <i class="fa fa-check-circle pe-1" ></i>
+        return <FontAwesomeIcon icon="check-circle"/>
     } 
     return ""
 }
@@ -53,7 +53,7 @@ const PostItem=(
     <img className = "float-end pe-1" height={25} width={25} src={`/tuiter/images/greymenu.png`}/>
     
      <div className="d-inline">
-        <div className="ms-12 d-inline text-dark">  
+        <div className="ms-12 d-inline text-dark pe-2">  
             {postItem.authorName} {IsVerified(postItem.isVerified)} 
             <span className = "text-secondary">{postItem.userhandle} · {postItem.postDate}
             </span>
