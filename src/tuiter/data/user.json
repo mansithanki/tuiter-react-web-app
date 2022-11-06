@@ -1,0 +1,16 @@
+{
+    "_id": 888,
+    "firstName": "Mansi",
+    "lastName": "Pravin Thanki",
+    "handle": "@thanki_mansi",
+    "profilePicture": "elon.jpeg",
+    "bannerPicture": "spacex.jpg",
+    "bio": "Student, Software Engineer,AI, Space, and renewable enthusiast. Retuits and likes are not endorsements",
+    "website": "youtube.com/webdevtv",
+    "location": "Boston, MA",
+    "dateOfBirth": "7/7/1968",
+    "dateJoined": "4/2009",
+    "followingCount": 340,
+    "followersCount": 223,
+    "tuits": "6,187"
+  }
