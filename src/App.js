@@ -4,9 +4,9 @@ import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faComment, faRetweet, faHeart, faShare,faCheckCircle} from '@fortawesome/free-solid-svg-icons'
+import {faGreaterThan, faArrowLeft, faComment, faRetweet, faHeart, faShare,faCheckCircle} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faRetweet, faHeart, faShare, faComment,faCheckCircle)
+library.add(faGreaterThan,faArrowLeft,faRetweet, faHeart, faShare, faComment,faCheckCircle)
 
 function App() {
   return (

@@ -5,7 +5,6 @@ const currentUser = {
     "authorName": "NASA",
     "userhandle": "@nasa",
     "authorImage": "nasa.png"
-    // "authorText": "Amazing Show about  mission"
    };
    
    const templateTuit = {

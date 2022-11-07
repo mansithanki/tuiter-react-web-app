@@ -20,7 +20,6 @@ const TuitStats=(
 'liked':false}}
 
 )=>{
-//   const postItem = useSelector(state => state.tuitslist)
   const dispatch = useDispatch();
     const likeTuitHandler = (postItem) => {
         dispatch(likeTuit(postItem))
@@ -54,8 +53,10 @@ const TuitStats=(
                   {postItem.likes}
                 </button>
               }
-            {/* <li className="list-group-item darken border-0"> <a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="heart"/> <i className="fa-regular fa-heart darken "></i> {postItem.likeCount} </a></li> */}
-            <li className = "list-group-item darken border-0"> <a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="share"/> <i className="fa-solid fa-arrow-up-from-bracket darken"></i> </a></li>           
+            <li className = "list-group-item darken border-0"> 
+            <a href = "#" className = "darken text-secondary text-decoration-none"> 
+            <FontAwesomeIcon icon="share"/> 
+            <i className="fa-solid fa-arrow-up-from-bracket darken"></i> </a></li>           
         </ul>
  </div>
   
