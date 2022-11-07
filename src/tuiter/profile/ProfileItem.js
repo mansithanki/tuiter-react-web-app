@@ -35,17 +35,17 @@ const ProfileItem = (
                         <span>Tuits</span>
                     </div>
                 </div>
-                <div className="parent">
-                    <img className="border-0 wd-banner-image wd-banner-picture" src={`/tuiter/images/${profile.bannerPicture}`} alt={"banner"}/>
-                    <img className="border-0 rounded-circle wd-profile-picture" src={`/tuiter/images/${profile.profilePicture}`} alt={"banner"}/>
+                <div className="parent mb-5">
+                    <img className="border-0 wd-timeline-image wd-timeline-picture" src={`/tuiter/images/${profile.bannerPicture}`} />
+                    <img className="border-0 rounded-circle wd-profile-picture" src={`/tuiter/images/${profile.profilePicture}`}/>
                 </div>
-                <div class={"mt-2"}>
+                <div class="mt-2">
 
                     <Link to="/tuiter/edit-profile" className="float-end btn btn-outline-dark rounded-pill fw-bold">Edit profile</Link>
 
                 </div>
                 <div>
-                    <div className={"mt-2"}>
+                    <div className="mt-5">
                         <span className="fw-bold text-dark">{profile.firstName} </span>
                         <span className="fw-bold text-dark">{profile.lastName}</span>
                         
