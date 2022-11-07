@@ -35,8 +35,8 @@ const EditProfile = () => {
                     </Link>
                 </span>
             </div>
-            <div >
-                <img className="wd-banner-image wd-banner-picture" src={`/tuiter/images/${profile.bannerPicture}`} alt={"banner"}/>
+            <div className="mt-4">
+                <img className="wd-timeline-image wd-timeline-picture" src={`/tuiter/images/${profile.bannerPicture}`} alt={"banner"}/>
                 <img className="border-1 rounded-circle wd-profile-picture" src={`/tuiter/images/${profile.profilePicture}`} alt={"banner"}/>
             </div>
 
