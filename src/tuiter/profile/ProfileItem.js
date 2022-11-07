@@ -35,7 +35,7 @@ const ProfileItem = (
                         <span>Tuits</span>
                     </div>
                 </div>
-                <div className="parent mb-5">
+                <div className="parent">
                     <img className="border-0 wd-timeline-image wd-timeline-picture" src={`/tuiter/images/${profile.bannerPicture}`} />
                     <img className="border-0 rounded-circle wd-profile-picture" src={`/tuiter/images/${profile.profilePicture}`}/>
                 </div>
@@ -45,7 +45,7 @@ const ProfileItem = (
 
                 </div>
                 <div>
-                    <div className="mt-5">
+                    <div className="mt-4">
                         <span className="fw-bold text-dark">{profile.firstName} </span>
                         <span className="fw-bold text-dark">{profile.lastName}</span>
                         
