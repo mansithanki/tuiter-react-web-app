@@ -17,7 +17,9 @@ const WhatsHappening = () => {
       time: "now",
       tuit: whatsHappening,
       dislikes: 0,
-      image: "NASA.png"
+      image: "NASA.png",
+      retuits:0,
+      replies:0,
       }
       dispatch(createTuitThunk(newTuit));
    
