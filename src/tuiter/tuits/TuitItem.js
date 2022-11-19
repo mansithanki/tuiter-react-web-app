@@ -25,10 +25,9 @@ const IsPostContentPresent=(postItem)=>{
     } 
     return <div className = "ps-5 pe-5">
             {/* <img className = "d-block position-relative img-fluid rounded border border-secondary " src={`/tuiter/images/${postItem.imgURL}`}/>  */}
-            {/* <div className = "d-block"> */}
+            <div className = "d-block p-1 m-1">
             <div className="d-inline-flex text-wrap text-break text-dark pe-3"> {postItem.tuit} </div>
-         {/* </div> */}
-         </div> 
+         </div></div> 
 }
 
 const IsPhotoPresent=(postItem)=>{
@@ -71,7 +70,7 @@ const TuitItem=(
      <div className="d-inline mb-0">
         <div className="ms-12 d-inline-block fw-bold text-dark bolder pe-2">  
             {postItem.username} {IsVerified(postItem.liked)}
-            <span className = "text-secondary fw-normal"> {postItem.handle} · {postItem.time}
+            <span className = "text-secondary fw-normal">{postItem.handle} · {postItem.time}
             </span>
         </div>
       
