@@ -25,9 +25,10 @@ const IsPostContentPresent=(postItem)=>{
     } 
     return <div className = "ps-5 pe-5">
             {/* <img className = "d-block position-relative img-fluid rounded border border-secondary " src={`/tuiter/images/${postItem.imgURL}`}/>  */}
-            <div className = "d-block">
+            {/* <div className = "d-block"> */}
             <div className="d-inline-flex text-wrap text-break text-dark pe-3"> {postItem.tuit} </div>
-         </div></div> 
+         {/* </div> */}
+         </div> 
 }
 
 const IsPhotoPresent=(postItem)=>{

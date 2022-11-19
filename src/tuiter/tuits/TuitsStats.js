@@ -32,7 +32,7 @@ const TuitStats=(
     return(
         
         <div className="d-inline">
-            <ul className=" list-group list-group-horizontal d-flex justify-content-around">
+            <ul className=" list-group list-group-horizontal ps-2 d-flex justify-content-around">
             <li className= "list-group-item darken border-0" > <a href = "#" className = "text-secondary darken text-decoration-none"> <FontAwesomeIcon icon="comment"/> </a>{postItem.replies}</li>
             <li className = "list-group-item darken border-0"><a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="retweet"/> <i className="fa-solid fa-retweet darken"></i> {postItem.retuits} </a></li>
             {
