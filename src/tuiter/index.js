@@ -12,13 +12,14 @@ import EditProfile from "./edit-profile/EditProfile";
 
 import whoReducer
   from "./reducers/who-reducer";
-import tuitsReducer from "./tuits/tuits-reducer";
+import tuitsReducer from "./tuits/tuits-list-reducer";
 import tuitslist from "./tuits/tuits-list-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer, tuitslist: tuitslist, profile: profileReducer}});
+  {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
+  // , tuitslist: tuitslist, profile: profileReducer}});
 
 
 

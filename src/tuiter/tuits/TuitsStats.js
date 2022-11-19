@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { updateTuitThunk } from '../../services/tuits-thunks';
 import {likeTuit, unlikeTuit} from "./tuits-list-reducer";
 import {useState} from "react";
 import { useDispatch } from 'react-redux';
@@ -32,18 +33,40 @@ const TuitStats=(
         
         <div className="d-inline">
             <ul className=" list-group list-group-horizontal ps-2 d-flex justify-content-around">
-            <li className= "list-group-item darken border-0" > <a href = "#" className = "text-secondary darken text-decoration-none"> <FontAwesomeIcon icon="comment"/> {postItem.commentCount} </a></li>
-            <li className = "list-group-item darken border-0"><a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="retweet"/> <i className="fa-solid fa-retweet darken"></i> {postItem.retuitCount} </a></li>
+            <li className= "list-group-item darken border-0" > <a href = "#" className = "text-secondary darken text-decoration-none"> <FontAwesomeIcon icon="comment"/> </a>{postItem.replies}</li>
+            <li className = "list-group-item darken border-0"><a href = "#" className = "darken text-secondary text-decoration-none"> <FontAwesomeIcon icon="retweet"/> <i className="fa-solid fa-retweet darken"></i> {postItem.retuits} </a></li>
             {
-                !postItem.liked &&
-                <button
-                  onClick={() => likeTuitHandler(postItem)}
-                  className="bg-white border-0 text-secondary">
-                <FontAwesomeIcon icon="heart" className='me-1'/>
-                  {postItem.likes}
-                </button>
+              // !postItem.liked &&
+              <div className='pt-2'>
+                <i onClick={() => dispatch(updateTuitThunk({
+                  ...postItem,
+                  likes: postItem.likes + 1
+                }))} className="bi bi-heart-fill me-2 text-danger"></i>
+                {postItem.likes}
+              </div>
+
+
+                // !postItem.liked &&
+                // <button
+                //   onClick={() => likeTuitHandler(postItem)}
+                //   className="bg-white border-0 text-secondary">
+                // <FontAwesomeIcon icon="heart" className='me-1'/>
+                //   {postItem.likes}
+                // </button>
               }
               {
+                // postItem.liked &&
+                <div className='pt-2'>
+                  <i onClick={() => dispatch(updateTuitThunk({
+                    ...postItem,
+                    dislikes: postItem.dislikes + 1
+                  }))} className="bi bi-hand-thumbs-down me-2 text-secondary"></i>
+                  {postItem.dislikes}
+                </div>
+              
+              
+              
+              /* {
                 postItem.liked &&
                 <button
                   onClick={() => unlikeTuitHandler(postItem)}
@@ -52,7 +75,7 @@ const TuitStats=(
                  
                   {postItem.likes}
                 </button>
-              }
+              } */}
             <li className = "list-group-item darken border-0"> 
             <a href = "#" className = "darken text-secondary text-decoration-none"> 
             <FontAwesomeIcon icon="share"/> 

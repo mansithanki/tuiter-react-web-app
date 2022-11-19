@@ -1,6 +1,10 @@
 import React, {useState} from "react";
-import {createTuit} from "../tuits/tuits-list-reducer";
+// import {createTuit} from "../tuits/tuits-list-reducer";
+import {createTuitThunk}
+  from "../../services/tuits-thunks";
+
 import {useDispatch} from "react-redux";
+import { faManatSign } from "@fortawesome/free-solid-svg-icons";
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
@@ -8,9 +12,14 @@ const WhatsHappening = () => {
 
  const tuitClickHandler = () => {
     const newTuit = {
-      authorText: whatsHappening
+      username: "NASA",
+      handle: "@nasa",
+      time: "now",
+      tuit: whatsHappening,
+      dislikes: 0,
+      image: "NASA.png"
       }
-      dispatch(createTuit(newTuit));
+      dispatch(createTuitThunk(newTuit));
    
    console.log(newTuit);
  }
