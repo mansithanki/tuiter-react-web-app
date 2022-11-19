@@ -12,18 +12,11 @@ const WhatsHappening = () => {
 
  const tuitClickHandler = () => {
     const newTuit = {
-      username: "NASA",
-      handle: "@nasa",
-      time: "now",
       tuit: whatsHappening,
-      dislikes: 0,
-      image: "NASA.png",
-      retuits:0,
-      replies:0,
       }
       dispatch(createTuitThunk(newTuit));
    
-   console.log(newTuit);
+  //  console.log(newTuit);
  }
  return (
    <div className="row">
