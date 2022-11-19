@@ -70,7 +70,7 @@ const TuitItem=(
      <div className="d-inline mb-0">
         <div className="ms-12 d-inline-block fw-bold text-dark bolder pe-2">  
             {postItem.username} {IsVerified(postItem.liked)}
-            <span className = "text-secondary fw-normal">{postItem.handle} · {postItem.time}
+            <span className = "text-secondary fw-normal"> {postItem.handle} · {postItem.time}
             </span>
         </div>
       
